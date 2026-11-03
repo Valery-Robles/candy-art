@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Art | Arte que se saborea</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo Candy Art" class="logo">
+        <h1>Candy Art</h1>
+        <p class="eslogan">Arte que se saborea</p>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Postres</a>
+            <a href="#ia" onclick="recomendarPostre()">Recomendador</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos a Candy Art</h2>
+            <p>Fusionamos la repostería con la narrativa, ilustraciones hechas a mano y bandas sonoras personalizadas.</p>
+        </section>
+
+        <section id="catalogo">
+            <h2>Nuestros Pasteles Artesanales</h2>
+            <div class="grid-productos">
+                <div class="producto">
+                    <img src="https://placehold.co/600x400/F49AA2/FFFFFF?text=Pastel+de+Chocolate" alt="Pastel de Chocolate">
+                    <h3>Pastel de Chocolate</h3>
+                    <p>Bizcocho húmedo de chocolate, con relleno cremoso y cobertura.</p>
+                    <p>Desde $48.000 COP</p>
+                </div>
+                <div class="producto">
+                    <img src="https://placehold.co/600x400/E37083/FFFFFF?text=Pastel+de+Vainilla" alt="Pastel de Vainilla">
+                    <h3>Pastel de Vainilla</h3>
+                    <p>Bizcocho esponjoso de vainilla, con relleno de crema suave.</p>
+                    <p>Desde $43.000 COP</p>
+                </div>
+                <div class="producto">
+                    <img src="https://placehold.co/600x400/FCCD86/333333?text=Pastel+de+Zanahoria" alt="Pastel de Zanahoria">
+                    <h3>Pastel de Zanahoria</h3>
+                    <p>Preparado con zanahoria fresca, especias suaves y cubierta de queso crema.</p>
+                    <p>Desde $48.000 COP</p>
+                </div>
+                <div class="producto">
+                    <img src="https://placehold.co/600x400/A8BF8A/FFFFFF?text=Pastel+Red+Velvet" alt="Pastel Red Velvet">
+                    <h3>Pastel Red Velvet</h3>
+                    <p>Bizcocho aterciopelado de color rojo, con relleno de crema de queso.</p>
+                    <p>Desde $52.000 COP</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ia" class="seccion-ia">
+            <h2>¿No sabes qué elegir?</h2>
+            <p>Nuestra IA te recomienda el postre perfecto según tu antojo.</p>
+            <select id="antojo">
+                <option value="suave">Algo suave y clásico</option>
+                <option value="intenso">Chocolate intenso</option>
+                <option value="diferente">Un sabor diferente y especiado</option>
+            </select>
+            <button onclick="recomendarPostre()">Descubrir mi postre</button>
+            <p id="resultado-ia"></p>
+        </section>
+
+        <section id="contacto">
+            <h2>Haz tu pedido personalizado</h2>
+            <form action="#" method="POST" class="formulario">
+                <input type="text" placeholder="Tu Nombre" required>
+                <input type="tel" placeholder="Tu Celular" required>
+                <textarea placeholder="Cuéntanos tu idea, temática especial o historia..." required></textarea>
+                <button type="submit">Enviar Solicitud</button>
+            </form>
+            <div class="whatsapp-btn">
+                <p>¿Prefieres hablar directo para agregar una banda sonora?</p>
+                <a href="https://wa.me/570000000000" target="_blank">Escríbenos a WhatsApp</a>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
