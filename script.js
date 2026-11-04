@@ -22,3 +22,13 @@ function recomendarPostre() {
         alert("✨ Te recomendamos probar nuestro icónico Pastel Red Velvet con música personalizada 🎶");
     }
 }
+// Consumo de API externa para frase inspiradora del día
+fetch('https://dummyjson.com/quotes/random')
+  .then(res => res.json())
+  .then(data => {
+    const contenedor = document.getElementById('frase-api');
+    if (contenedor) {
+      contenedor.innerHTML = `<p>"${data.quote}" — <strong>${data.author}</strong></p>`;
+    }
+  })
+  .catch(err => console.log('Error API:', err));
