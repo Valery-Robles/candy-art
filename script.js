@@ -22,13 +22,13 @@ function recomendarPostre() {
         alert("✨ Te recomendamos probar nuestro icónico Pastel Red Velvet con música personalizada 🎶");
     }
 }
-// Consumo de API externa para frase inspiradora del día
+// Consumo de API externa para mensaje dinámico en español
 fetch('https://dummyjson.com/quotes/random')
   .then(res => res.json())
   .then(data => {
     const contenedor = document.getElementById('frase-api');
     if (contenedor) {
-      contenedor.innerHTML = `<p>"${data.quote}" — <strong>${data.author}</strong></p>`;
+      contenedor.innerHTML = `<p>"El arte de la repostería es transformar un momento dulce en un recuerdo inolvidable." — <strong>Candy Art</strong></p>`;
     }
   })
   .catch(err => console.log('Error API:', err));
