@@ -1,3 +1,4 @@
+// Proyecto Candy Art - Logica de interactividad y consumo de API externa
 // Seleccionamos todos los cuadros de los productos
 const postres = document.querySelectorAll('.producto');
 
