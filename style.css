@@ -113,3 +113,8 @@ button, .whatsapp-btn a {
     object-fit: cover;
     border-radius: 8px;
 }
+/* Tipografía artesanal para los títulos */
+h1, h2, h3, .logo-texto {
+    font-family: 'Pacifico', cursive !important;
+    font-weight: normal;
+}
