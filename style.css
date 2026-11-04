@@ -118,3 +118,7 @@ h1, h2, h3, .logo-texto {
     font-family: 'Pacifico', cursive !important;
     font-weight: normal;
 }
+/* Color blanco brillante para resaltar el título principal y el eslogan */
+header h1, .eslogan {
+    color: #ffffff !important;
+}
